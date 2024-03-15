@@ -12,11 +12,11 @@ function TaskCard({ task }) {
  return (
     <div className="bg-gray-800 text-white rounded-md p-4">
       <header className="flex justify-between">
-        <h2 className="text-sm font-bold">{task.title}</h2>
+        <h2 className="text-xl font-bold">{task.title}</h2>
         <span className={task.done ? "text-green-500" : "text-red-500"}>{task.done == 1 ? "️✅️" : "❌"}</span>
       </header>
-      <p className="text-xs">{task.description}</p>
-      <span>{task.createAt}</span>
+      <p className="text-lg">{task.description}</p>
+      <span className="text-sm">{task.createAt}</span>
       <div className="flex gap-x-1">
         <button
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
